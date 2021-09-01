@@ -1,0 +1,127 @@
+body{
+    --accent-color: white;
+    --background-color: rgba(45, 115, 124, 0.671);
+    --text-color: black;
+    --transition-delay: 1s;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+    height: 15vh;
+    margin: 0;
+
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --accent-color: #0e1611e5;
+    --button-text-color: white;
+}
+
+.dark-light {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+    overflow: hidden;
+
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: .5em 1em;
+    border-radius: .3em;
+    overflow: hidden;
+    height: 2.5em;
+}
+
+p, h1, h2, h3, h4, h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputField{
+position: relative;
+display: flex;
+justify-content: center;
+top: 9.7rem;
+}
+
+#form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10rem;
+}
+
+button{
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+    border: none;
+    outline: none;
+    overflow: hidden;
+
+}
+
+button:hover {
+    background-color: rgb(248, 213, 169);
+}
+
+.binary{
+    position: absolute;
+    width: 10rem;
+    top: 2.0rem;
+}
+
+.ascii {
+    position: absolute;
+    width: 10rem;
+    top: 4.2rem;
+}
+
+.octal {
+    position: absolute;
+    width: 10rem;
+    top: 6.4rem;
+}
+
+.hexadecimal {
+    position: absolute;
+    width: 10rem;
+    top: 8.6rem;
+}
+
+output{
+    position: absolute;
+    background-color: white;
+    border: dashed 0.01rem black;
+    color: black;
+    top: 15rem;
+    width: 50%;
+    padding: .5em;
+    height: 5rem;
+}
