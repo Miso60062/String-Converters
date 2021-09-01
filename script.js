@@ -13,7 +13,7 @@ document.querySelector('.dark-light').addEventListener
         const input = document.getElementById('text').value
         output.value = ""
         for(let i = 0; i < input.length; i++) {
-        output.value += input[i].charCodeAt(0).toString(2).substring(1) + " "
+        output.value += input[i].charCodeAt(0).toString(2) + " "
         }
 })
 
